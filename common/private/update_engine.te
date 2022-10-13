@@ -14,3 +14,7 @@ domain_trans(update_engine, otapreopt_chroot_exec, backuptool)
 
 # Read OTA zip file at /data/media/.
 allow update_engine media_rw_data_file:file { read open };
+
+# Allow update engine to read fuse files anywhere
+allow update_engine fuse:dir r_dir_perms;
+allow update_engine fuse:file { read open getattr };
