@@ -16,3 +16,6 @@ persist.vendor.recovery_update         u:object_r:recovery_update_prop:s0
 
 # xtra-daemon control
 persist.sys.xtra-daemon.enabled        u:object_r:xtra_control_prop:s0 exact bool
+
+# ActivityManager IntegrityService binding state prop
+ams.integrityservice_binding           u:object_r:ams_state_prop:s0 exact bool

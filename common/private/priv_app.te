@@ -1,0 +1,2 @@
+# ActivityManager binding state prop
+get_prop(priv_app, ams_state_prop)

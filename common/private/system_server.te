@@ -8,6 +8,9 @@ get_prop(system_server, vendor_persist_camera_prop)
 # Let system server toggle xtra-daemon
 set_prop(system_server, xtra_control_prop)
 
+# ActivityManager binding state prop
+set_prop(system_server, ams_state_prop)
+
 # Use HALs
 hal_client_domain(system_server, hal_lineage_health)
 hal_client_domain(system_server, hal_lineage_powershare)
